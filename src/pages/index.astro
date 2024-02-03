@@ -1,9 +1,42 @@
 ---
+import Layout from '../layouts/Layout.astro';
 import { getCollection } from 'astro:content';
-const blogEntries = await getCollection('blog');
+const serviceEntries = await getCollection('service');
 ---
 
-<Layout title="English Motor Services in Taiwan">
-  <main>
+<Layout title="English Services">
+  <head>
+    <div class="uk-section uk-section-primary">
+    <div class="uk-container uk-height-medium uk-flex uk-flex-center uk-flex-middle">
+      <h1 class="uk-heading-xlarge uk-text-center">
+        English-Language Car, Motorcycle, and Scooter Services in Taiwan
+      </h1>
+    </div>
+    </div>
+  </head>
+  <main >
+    <div class="uk-section uk-section-default">
+      <div class="uk-container" >
+        <p>
+          Interested in owning, or already own, a car, motorcycle, or scooter in Taiwan, and daunted by the labyrinthian Chinese-language bureaucracy? Let our bilingual English- and Mandarin-speaking staff help out! Whatever your motor vehicle related needs are in Taiwan, we can help.
+        </p>
+      </div>
+      </div>
+    <div class="uk-section uk-section-secondary">
+      <div class="uk-container" >
+        <div class="uk-child-width-expand@s uk-margin" uk-grid>
+          { serviceEntries.map(service => (
+          <div>
+            <div class="uk-card uk-card-default uk-card-body">
+              <h3 class="uk-card-title">
+                {service.data.title}
+              </h3>
+              {service.data.description}
+            </div>
+          </div>
+          ))}
+        </div>
+      </div>
+    </div>
 	</main>
 </Layout>
