@@ -12,4 +12,5 @@ The website was built in [Astro](https://astro.build/). The [Cirrus](https://www
 leveraged. The source code is [available for viewing](https://codeberg.org/508_dev/moto-site) and licensed under AGPL-3.
 The content of the site is copyrighted by 508.dev, 2024.
 
-The motorcycle favicon was provided by [Freepik](https://www.flaticon.com/free-icons/motorcycle).
+The motorcycle favicon was provided by [Freepik](https://www.flaticon.com/free-icons/motorcycle). Favicons were generated
+using [realfavicongenerator.net](https://realfavicongenerator.net/).

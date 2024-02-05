@@ -8,7 +8,8 @@ Fluent English / Chinese motor vehicle services are managed almost entirely by M
 
 ![Mr. Lobster riding his motorcycle.](../../assets/mrlobster.jpg)
 
-Why he's called Mr. Lobster remains a mystery. He's a Malaysian-born Taiwanese permanent resident
+Why he's called Mr. Lobster remains a mystery, as does the origin of his fluent English ability.
+He's a Malaysian-born Taiwanese permanent resident
 with over a decade of experience fixing, buying, and selling cars, scooters, and motorcycles in
 Taiwan.
 
