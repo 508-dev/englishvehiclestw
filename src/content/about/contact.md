@@ -2,12 +2,11 @@
 layout: ../../layouts/About.astro
 title: Contact Us!
 description: Contact Information for English help with Scooters, Motorcycles, and Cars in Taiwan.
+facebook: https://www.facebook.com/share/HYydXieABZwt3i7u/?mibextid=%22%22
 ---
 
-Phone: Coming Soon
+Phone: +886 0908836370
 
-LineID: calebrogers2
+LineID: 0166563259
 
-Email: caleb@calebjay.com
-
-Facebook: Coming Soon
+Email: domenikho@gmail.com
