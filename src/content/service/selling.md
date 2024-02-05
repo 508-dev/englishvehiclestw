@@ -22,3 +22,5 @@ available to you when you sell through us!
 Depending on your vehicle, we may even be interested in purchasing it ourselves, for the sake of buying. Furthermore, if you find yourself
 in the unfortunate circumstance of owning scooter or motorcycle that's been significantly damaged in a collision, we may be interested
 in purchasing it for the purpose of fixing it up and selling it.
+
+Give us a call or [send us a message](/about/contact)!

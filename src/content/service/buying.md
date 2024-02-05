@@ -22,4 +22,4 @@ offer English-language negotiation and filing assistance. Finally, to make sure 
 lemon, we can inspect any vehicle before you buy, acting as a neutral third party and giving you a clear
 picture of any maintenance requirements for vehicle, and rooting out any nasty surprises.
 
-If you want peace of mind, let us help you buy your car, scooter, or motorcycle in Taiwan!
+If you want peace of mind, let us help you buy your car, scooter, or motorcycle in Taiwan! Give us a call or [send us a message](/about/contact)!

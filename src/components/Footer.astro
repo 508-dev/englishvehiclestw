@@ -1,0 +1,25 @@
+---
+
+import { getEntry } from 'astro:content';
+const contactInfo = await getEntry('about', 'contact');
+---
+
+<footer class="footer text-white">
+  <div class="content footer__title">
+    {contactInfo.body}
+  </div>
+  <div class="content">
+    <div class="divider"></div>
+    <div class="row">
+      <div class="col-12">
+        <ul class="no-bullets">
+          <a href={contactInfo.data.facebook}>
+            <li class="footer__list-item">
+              Facebook
+            </li>
+          </a>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>

@@ -18,3 +18,5 @@ them.
 Don't trust you or your family's safety to a potential mis-translation. Let us service your vehicle
 and guarantee against communication errors leading to unhappy accidents on the road. Don't worry, though we
 have fluent English ability, we offer competetive pricing compared to Chinese speaking mechanics.
+
+Give us a call or [send us a message](/about/contact)!

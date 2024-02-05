@@ -21,3 +21,5 @@ Don't risk a mistranslation that you only discover years later when a scooter tu
 without looking, straight into your car, and you find yourself holding the bag because
 that specific kind of collission wasn't covered! Choose peace of mind and fluent English
 car, scooter, and motorcycle insurance options through us.
+
+Give us a call or [send us a message](/about/contact)!

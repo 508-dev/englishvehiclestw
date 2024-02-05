@@ -1,15 +1,15 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import { getCollection, getEntry } from 'astro:content';
+import Footer from '../components/Footer.astro';
+import { getCollection } from 'astro:content';
 const serviceEntries = await getCollection('service');
-const contactInfo = await getEntry('about', 'contact');
 
 
 
 ---
 
 <Layout title="English Services" description="Fluent English services with cars, motorcycles, and scooters in Taiwan. Includes renting, buying, selling, inspecting, repair, and maintenance.">
-  <div  class="bg-gray-100 min-h-25p mb-6">
+  <div class="bg-gray-100 min-h-25p mb-6">
     <section>
       <div class="hero">
         <div class="hero-body">
@@ -32,7 +32,7 @@ const contactInfo = await getEntry('about', 'contact');
   <div class="row px-6-lg px-12-xl py-1">
     { serviceEntries.map(service => (
     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 mb-4">
-      <div class="card h-100p u-flex u-flex-column p-2">
+      <div class="card h-100p u-flex u-flex-column p-2 hover-grow">
         <div class="card__header">
           <h3 class="uk-card-title">
             {service.data.title}
@@ -50,24 +50,11 @@ const contactInfo = await getEntry('about', 'contact');
     </div>
     ))}
   </div>
-  <footer class="footer text-white">
-    <div class="content footer__title">
-      {contactInfo.body}
-    </div>
-    <div class="content">
-      <div class="divider"></div>
-      <div class="row">
-        <div class="col-12">
-          <ul class="no-bullets">
-            <a href={contactInfo.data.facebook}>
-              <li class="footer__list-item">
-                Facebook
-              </li>
-            </a>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </footer>
-
+  <Footer />
 </Layout>
+
+<style>
+ .hover-grow:hover {
+     z-index: 100;
+ }
+</style>

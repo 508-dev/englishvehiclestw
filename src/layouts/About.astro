@@ -1,18 +1,36 @@
 ---
+import Footer from '../components/Footer.astro';
 import BaseLayout from './Layout.astro'
 const {frontmatter} = Astro.props;
 ---
 <BaseLayout url={frontmatter.url} title={frontmatter.title} description={frontmatter.description}>
-  <main class="uk-section uk-section-primary">
-    <div class="uk-container">
-      <!-- ... -->
-      <h1 class="uk-heading-line"><span>{frontmatter.title}</span></h1>
-      <h3>{frontmatter.description}</h3>
-    </div>
-  </main>
-  <section class="uk-section uk-section-default">
-    <div class="uk-container">
+  <div class="bg-gray-100 min-h-25p mb-6">
+    <section>
+      <div class="hero">
+        <div class="hero-body">
+          <div class="content px-12-lg px-24-xl">
+            <h1 class="title">
+              {frontmatter.title}
+            </h1>
+            <h5 class="subtitle text-gray-700">{frontmatter.description}</h5></div>
+        </div>
+      </div>
+  </div>
+    </section>
+  </div>
+  <div class="content px-12-lg px-24-xl px-2-sm px-2">
+    <nav>
+      <a href="/">
+        Home
+      </a>
+    </nav>
+  </div>
+
+  <section class="mb-12 min-h-50p">
+    <div class="content px-12-lg px-24-xl px-2-sm px-2">
       <slot /> <!-- Markdown content is injected here -->
     </div>
   </section>
+
+  <Footer />
 </BaseLayout>
