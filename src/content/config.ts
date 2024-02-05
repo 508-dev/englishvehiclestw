@@ -18,6 +18,7 @@ const aboutCollection = defineCollection({
     layout: z.string(),
     title: z.string(),
     description: z.string(),
+    facebook: z.string().optional(),
   }),
 });
 

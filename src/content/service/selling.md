@@ -13,10 +13,10 @@ Fortunately, our business started in sales and mechanic work, and so we're very 
 Call or message us for a free consultation and overview of the general sales process in Taiwan, including recommendations on where to list,
 general pricing guidelines for your vehicle's model, and the typical paperwork you'll need to file at the DMV when selling the vehicle.
 
-Or, for a commission-based pricing model, let us leverage our expertise and fluent English / Chinese langauge skills to handle the
+Or, for a commission-based pricing model, let us leverage our expertise and fluent English / Chinese language skills to handle the
 whole process for you. We can take care of listing the vehicle, negotiating with Chinese speakers, investigating if selling to a dealership
 is a good course of action, pre-sales inspection and maintenance, and DMV paperwork filing. The reality is, Taiwanese buyers are usually much more comfortable
-buying from non-citizens when there's a Taiwanese company and fluent Chinese langauge speaker involved, dramatically expanding the options
+buying from non-citizens when there's a Taiwanese company and fluent Chinese language speaker involved, dramatically expanding the options
 available to you when you sell through us!
 
 Depending on your vehicle, we may even be interested in purchasing it ourselves, for the sake of buying. Furthermore, if you find yourself

@@ -9,7 +9,7 @@ All motorized vehicles in Taiwan must be inspected once a year. If you choose, y
 
 There are some "gotchas" with this process that may, however, cause your inspection to fail, forcing you to return on another day and wait in line again to try to pass. For example, any and all modifications to red and yellow plate motorcycles are illegal and will cause an inspection to fail - even an LED headlight swap!
 
-Our English-Speaking motor vehicle inspection assitance service offers the following, at various price points:
+Our English-Speaking motor vehicle inspection assistance service offers the following, at various price points:
 
 * Helping you gather the proper paperwork required during inspection (call or message us for free consultation!)
 * Preparing your motorcycle, car, or scooter for inspection by swapping custom parts for legal parts

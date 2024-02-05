@@ -22,6 +22,6 @@ or shoot us a message first, and we'll make sure you're sorted properly, in flue
 
 No charge for these services, and no, we don't get kick-backs from rental agencies. We offer this service for
 free because it was one of our biggest headaches when some of us moved to Taiwan, and also
-becuase it costs us very little time or effort to help out others in this area.
+because it costs us very little time or effort to help out others in this area.
 
 Give us a call or [send us a message](/about/contact)!
