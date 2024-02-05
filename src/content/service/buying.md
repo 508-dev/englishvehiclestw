@@ -1,19 +1,25 @@
 ---
 layout: ../../layouts/Service.astro
-title: Inspection Assistance
-description: Get fluent English, white-glove handling of your yearly vehicle government inspection requirements.
+title: Purchasing Assistance
+description: English-language vehicle model consultation, vehicle sourcing, purchase filing, and inspection service.
 price: '2000'
 ---
 
-All motorized vehicles in Taiwan must be inspected once a year. If you choose, you can do this yourself by taking your vehicle to your local DMV, waiting in line a few hours, and undergoing the inspection.
+Even in your home country, buying a new car, motorcycle, or scooter, can be daunting. Manufacturers aren't interested
+in working together to help you figure out which option is best for your needs, they all just want to sell you their
+car!  Even if you can narrow down to a few specific vehicle models, finding these models on the used or new vehicle
+market can sometimes be outright impossible. Then, of course, there's always the risk of being sold a lemon!
 
-There are some "gotchas" with this process that may, however, cause your inspection to fail, forcing you to return on another day and wait in line again to try to pass. For example, any and all modifications to red and yellow plate motorcycles are illegal and will cause an inspection to fail - even an LED headlight swap!
+Establishing a new life in a new country comes with enough headaches; let us help take one more off your shoulders.
+We provide various vehicle purchasing related services, including free consultations on what kind of vehicle is
+right for your or your family's needs, helping align your expectations with our decades-long and up-to-date
+experience with the unique pre-owned and new Taiwan car, scooter, and motorcycle markets.
 
-Our English-Speaking motor vehicle inspection assitance service offers the following, at various price points:
+We also offer commission-based purchasing assistance for cars, scooters, and motorcycles, including sourcing
+from used, pre-owned, and new vehicles from our curated network of dealers and private sellers. Since most
+sellers only speak Chinese, and since all paperwork for vehicle purchases must be filed in Chinese, we also
+offer English-language negotiation and filing assistance. Finally, to make sure you don't end up buying a
+lemon, we can inspect any vehicle before you buy, acting as a neutral third party and giving you a clear
+picture of any maintenance requirements for vehicle, and rooting out any nasty surprises.
 
-* Helping you gather the proper paperwork required during inspection (call or message us for free consultation!)
-* Preparing your motorcycle, car, or scooter for inspection by swapping custom parts for legal parts
-* Taking your vehicle and paperwork to the DMV and having the government inspection performed for you
-* Delivering your vehicle to you at the location of your choosing with custom parts restored and re-calibrated, along with your paperwork, as well as English-fluent advice on anything that was noticed during inspection that may be legitimate maintenance needs or other paperwork-related concerns.
-
-If you have the time, energy, and confidence to navigate the generally Mandarin-only environment of the DMV inspection process on your own, we are happy to chat with you and make sure you have the paperwork you need, and answer any questions you have about custom equipment. Should you prefer to let us handle the process for you and take the weight off your shoulders, we're more than happy to handle the whole bureaucratic process for you, leaving you free to enjoy the fun parts of owning a motorcycle, scooter, or car in Taiwan.
+If you want peace of mind, let us help you buy your car, scooter, or motorcycle in Taiwan!

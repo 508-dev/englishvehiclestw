@@ -12,7 +12,18 @@ const serviceCollection = defineCollection({
   }),
 });
 
+const aboutCollection = defineCollection({
+  type: 'about', // v2.5.0 and later
+  schema: z.object({
+    layout: z.string(),
+    title: z.string(),
+    description: z.string(),
+  }),
+});
+
+
 // 3. Export a single `collections` object to register your collection(s)
 export const collections = {
   'service': serviceCollection,
+  'about': aboutCollection,
 };

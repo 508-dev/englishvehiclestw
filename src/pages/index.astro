@@ -1,20 +1,24 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import { getCollection } from 'astro:content';
+import { getCollection, getEntry } from 'astro:content';
 const serviceEntries = await getCollection('service');
+const contactInfo = await getEntry('about', 'contact');
+
+
+
 ---
 
-<Layout title="English Services">
+<Layout title="English Services" description="Fluent English services with cars, motorcycles, and scooters in Taiwan. Includes renting, buying, selling, inspecting, repair, and maintenance.">
   <head>
     <div class="uk-section uk-section-primary">
     <div class="uk-container uk-height-medium uk-flex uk-flex-center uk-flex-middle">
-      <h1 class="uk-heading-xlarge uk-text-center">
+      <h1 class="uk-heading-large uk-text-center">
         English-Language Car, Motorcycle, and Scooter Services in Taiwan
       </h1>
     </div>
     </div>
   </head>
-  <main >
+  <main>
     <div class="uk-section uk-section-default">
       <div class="uk-container" >
         <p>
@@ -22,20 +26,25 @@ const serviceEntries = await getCollection('service');
         </p>
       </div>
       </div>
-    <div class="uk-section uk-section-secondary">
+    <div class="uk-section uk-section-default">
       <div class="uk-container" >
-        <div class="uk-child-width-expand@s uk-margin" uk-grid>
+        <div class="uk-grid-small uk-child-width-1-1@s uk-child-width-1-2@m uk-child-width-1-3@l uk-flex-center uk-grid-match" uk-grid>
           { serviceEntries.map(service => (
-          <div>
-            <div class="uk-card uk-card-default uk-card-body">
+            <div class="uk-card uk-card-default uk-card-body uk-card-hover">
               <h3 class="uk-card-title">
                 {service.data.title}
               </h3>
+              <p>
               {service.data.description}
+              </p>
             </div>
-          </div>
           ))}
         </div>
+      </div>
+    </div>
+    <div class="uk-section uk-section-secondary uk-text-center">
+      <div class="uk-container">
+        {contactInfo.body}
       </div>
     </div>
 	</main>
