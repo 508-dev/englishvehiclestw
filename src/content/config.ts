@@ -13,7 +13,7 @@ const serviceCollection = defineCollection({
 });
 
 const aboutCollection = defineCollection({
-  type: 'about', // v2.5.0 and later
+  type: 'content', // v2.5.0 and later
   schema: z.object({
     layout: z.string(),
     title: z.string(),
