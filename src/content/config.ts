@@ -1,30 +1,18 @@
 import { z, defineCollection } from 'astro:content';
 
-// 2. Define a `type` and `schema` for each collection
-const serviceCollection = defineCollection({
-  type: 'content', // v2.5.0 and later
-  schema: z.object({
-    layout: z.string(),
-    title: z.string(),
-    description: z.string(),
-    price: z.string().optional(),
-
-  }),
+const blogCollection = defineCollection({
+  schema: ({ image }) =>
+    z.object({
+      title: z.string(),
+      author: z.string(),
+      tags: z.array(z.string()),
+      description: z.string(),
+      pubDate: z.string().transform((str) => new Date(str)),
+      imgUrl: image(),
+      draft: z.boolean().optional().default(false),
+    }),
 });
 
-const aboutCollection = defineCollection({
-  type: 'content', // v2.5.0 and later
-  schema: z.object({
-    layout: z.string(),
-    title: z.string(),
-    description: z.string(),
-    facebook: z.string().optional(),
-  }),
-});
-
-
-// 3. Export a single `collections` object to register your collection(s)
 export const collections = {
-  'service': serviceCollection,
-  'about': aboutCollection,
+  blog: blogCollection,
 };

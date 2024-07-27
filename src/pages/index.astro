@@ -1,64 +1,95 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Footer from '../components/Footer.astro';
-import { getCollection } from 'astro:content';
-const serviceEntries = await getCollection('service');
+import Layout from '@layouts/Default.astro';
+import RecentBlogPosts from '@components/generic/RecentBlogPosts.astro';
+import MobileSocials from '@components/home/MobileSocials.astro';
+import { Pill } from '@eliancodes/brutal-ui';
+import { Button } from '@eliancodes/brutal-ui';
+import { Card } from '@eliancodes/brutal-ui';
 
-
-
+const builtWith = [
+  { name: 'Astro', url: 'https://astro.build/' },
+  { name: 'UnoCSS', url: 'https://uno.antfu.me/' },
+  {
+    name: 'Content Collections',
+    url: 'https://docs.astro.build/en/guides/content-collections/',
+  },
+  { name: 'RSS', url: 'https://docs.astro.build/en/guides/rss/' },
+  {
+    name: 'Sitemap',
+    url: 'https://docs.astro.build/en/guides/integrations-guide/sitemap/',
+  },
+  { name: 'Vercel', url: 'https://vercel.com' },
+  { name: 'TypeScript', url: 'https://www.typescriptlang.org/' },
+];
 ---
 
-<Layout title="Taiwan English Services" description="Fluent English services with cars, motorcycles, and scooters in Taiwan. Includes renting, buying, selling, inspecting, repair, and maintenance.">
-  <div class="bg-gray-100 min-h-25p mb-6">
-    <section>
-      <div class="hero">
-        <div class="hero-body">
-          <div class="content px-12-lg px-24-xl">
-            <h1 class="title">
-              English-Language Car, Motorcycle, and Scooter Services in Taiwan
-            </h1>
+<Layout
+  title='Home'
+  pageTitle='Brutal Theme | Home'
+  description='Brutal is a minimalistic, neobrutalism theme for Astro.'
+>
+  <main class='bg-pink p-6'>
+    <MobileSocials />
+    <section id='about' class='grid md:grid-cols-8 gap-8 mt-4'>
+      <h2 class='hidden'>About Brutal</h2>
+      <div class='col-span-4'>
+        <Card>
+          <div class='flex flex-col justify-between items-start gap-4'>
+            <p class='mt-4 outfit text-2xl md:text-5xl lg:text-7xl'>
+              Brutal theme for <a
+                class='text-white'
+                target='_blank'
+                href='https://astro.build/'>Astro</a
+              >
+            </p>
+            <p class='mt-2 outfit text-xl md:text-3xl lg:text-5xl'>
+              A minimalistic, neobrutalism theme for Astro.
+            </p>
+            <Button target={'_self'} href='/blog/'>
+              Check out the blog &rarr;
+            </Button>
           </div>
-        </div>
+        </Card>
+      </div>
+      <div class='col-span-2'>
+        <Card>
+          <h2 class='text-2xl md:text-4xl lg:text-6xl mb-8 dm-serif'>
+            Brutal is built with
+          </h2>
+          <ul class='flex gap-4 flex-wrap'>
+            {
+              builtWith.map((item) => (
+                <li>
+                  <Pill>
+                    <a
+                      class='sanchez'
+                      href={item.url}
+                      target='_blank'
+                      title={`Go to ${item.name}`}
+                    >
+                      {item.name}
+                    </a>
+                  </Pill>
+                </li>
+              ))
+            }
+          </ul>
+        </Card>
+      </div>
+      <div class='col-span-2'>
+        <Card>
+          <h2 class='text-2xl md:text-4xl lg:text-6xl mb-4 dm-serif'>
+            What is Brutal?
+          </h2>
+          <p class='poppins'>
+            Brutal is a theme built with Astro, UnoCSS by <a
+              href='https://www.elian.codes/'>Elian</a
+            >. It's a simple, fast, and modern theme that is easy to use and
+            customize. Mainly meant to power blogs and personal websites.
+          </p>
+        </Card>
       </div>
     </section>
-  </div>
-  <section class="mb-12">
-    <div class="content px-12-lg px-24-xl px-2-sm px-2">
-      <p>
-        Interested in owning, or already own, a car, motorcycle, or scooter in Taiwan,
-        and daunted by the labyrinthian Chinese-language bureaucracy? Let our bilingual
-        English- and Mandarin-speaking staff help out! Whatever your motor vehicle related
-        needs are in Taiwan, we can help. <a href="/about/contact">Contact us today</a>,
-        or read more about our services below.
-      </p>
-    </div>
-  </section>
-  <div class="row px-6-lg px-12-xl py-1">
-    { serviceEntries.map(service => (
-    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 mb-4">
-      <div class="card h-100p u-flex u-flex-column p-2 hover-grow">
-        <div class="card__header">
-          <h3 class="uk-card-title">
-            {service.data.title}
-          </h3>
-        </div>
-        <div class="content">
-          <p>
-            {service.data.description}
-          </p>
-        </div>
-        <div class="card__action-bar">
-          <a href={'services/' + service.slug} class="uk-button uk-button-text">Read more</a>
-        </div>
-      </div>
-    </div>
-    ))}
-  </div>
-  <Footer />
+    <RecentBlogPosts />
+  </main>
 </Layout>
-
-<style>
- .hover-grow:hover {
-     z-index: 100;
- }
-</style>
