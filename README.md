@@ -1,16 +1,20 @@
-# Astro Starter Kit: Basics
+# English-Language Car, Motorcycle, and Scooter Services in Taiwan
 
-```sh
-npm create astro@latest -- --template basics
-```
+Interested in owning, or already own, a car, motorcycle, or scooter in Taiwan, 
+and daunted by the labyrinthian Chinese-language bureaucracy? 
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+## Let our bilingual English- and Mandarin-speaking staff help out! 
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Whatever your motor vehicle related needs are in Taiwan, we can help. Contact us today, or read more about our services below.
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+## Project Services and Operator
+Fluent English / Chinese motor vehicle services are managed almost entirely by Mr. Lobster.
+Why he's called Mr. Lobster remains a mystery, as does the origin of his fluent English ability. He's a Malaysian-born Taiwanese permanent resident with over a decade of experience fixing, buying, and selling cars, scooters, and motorcycles in Taiwan.
+
+## Website Development/Maintenance
+This website was built by Caleb Rogers, a member of the software engineering co-op [508.dev](https://508.dev). 508.dev is a design and development firm with a unique structure that allows it to beat any other engineering consultancy or agency on price and outcomes.
+The website was built in Astro. The Cirrus CSS library was leveraged. The source code is available for viewing and licensed under AGPL-3. The content of the site is copyrighted by 508.dev, 2024.
+The motorcycle favicon was provided by Freepik. Favicons were generated using realfavicongenerator.net. 
 
 ## 🚀 Project Structure
 
@@ -52,3 +56,21 @@ All commands are run from the root of the project, from a terminal:
 ## 👀 Want to learn more?
 
 Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+
+## Project Management
+
+508.dev strives to keep project management up to date to make it as easy as possible
+to contribute to our FOSS projects. Usually, our project-management system is built into
+wherever you're viewing this repository. In this case, that's codeberg.
+
+You can see open tickets on our KANBAN board at: https://codeberg.org/508_dev/english-vehicles-tw/projects/8385 .
+Tickets are categorized as beginner, intermediate, or advanced. Feel free to
+assign a ticket to yourself, or leave a comment asking any questions! Also feel
+free to create any new issues for any features you'd like to recommend.
+
+For more information, or to see the other FOSS projects we work on, go to
+https://508.dev
+
+The current URL is https://www.englishvehicles.tw/
+
+For more information, or to see the other FOSS projects we work on, go to https://wiki.508.dev/s/foss-project-index
