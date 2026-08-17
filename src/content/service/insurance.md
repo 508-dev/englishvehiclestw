@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/Service.astro
 title: Insurance
 description: Insurance sales, consultation, and management services in English.
 price: '2000'

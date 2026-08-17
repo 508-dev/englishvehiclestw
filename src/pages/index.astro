@@ -3,62 +3,48 @@ import Layout from '../layouts/Layout.astro';
 import Footer from '../components/Footer.astro';
 import { getCollection } from 'astro:content';
 const serviceEntries = await getCollection('service');
-
-
-
 ---
 
 <Layout title="Taiwan English Services" description="Fluent English services with cars, motorcycles, and scooters in Taiwan. Includes renting, buying, selling, inspecting, repair, and maintenance.">
-  <div class="bg-gray-100 min-h-25p mb-6">
-    <section>
-      <div class="hero">
-        <div class="hero-body">
-          <div class="content px-12-lg px-24-xl">
-            <h1 class="title">
-              English-Language Car, Motorcycle, and Scooter Services in Taiwan
-            </h1>
-          </div>
-        </div>
-      </div>
-    </section>
-  </div>
-  <section class="mb-12">
-    <div class="content px-12-lg px-24-xl px-2-sm px-2">
-      <p>
+  <section class="hero">
+    <div class="container hero__inner">
+      <span class="hero__eyebrow">English &middot; Mandarin &middot; Taiwan</span>
+      <h1>English-Language Car, Motorcycle, and Scooter Services in Taiwan</h1>
+      <p class="lede">
         Interested in owning, or already own, a car, motorcycle, or scooter in Taiwan,
         and daunted by the labyrinthian Chinese-language bureaucracy? Let our bilingual
-        English- and Mandarin-speaking staff help out! Whatever your motor vehicle related
-        needs are in Taiwan, we can help. <a href="/about/contact">Contact us today</a>,
-        or read more about our services below.
+        English- and Mandarin-speaking staff help out.
       </p>
-    </div>
-  </section>
-  <div class="row px-6-lg px-12-xl py-1">
-    { serviceEntries.map(service => (
-    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 mb-4">
-      <div class="card h-100p u-flex u-flex-column p-2 hover-grow">
-        <div class="card__header">
-          <h3 class="uk-card-title">
-            {service.data.title}
-          </h3>
-        </div>
-        <div class="content">
-          <p>
-            {service.data.description}
-          </p>
-        </div>
-        <div class="card__action-bar">
-          <a href={'services/' + service.slug} class="uk-button uk-button-text">Read more</a>
-        </div>
+      <div class="hero__actions">
+        <a href="/about/contact" class="button button--primary">Contact us today</a>
+        <a href="#services" class="button button--ghost">See our services</a>
       </div>
     </div>
-    ))}
-  </div>
+  </section>
+
+  <section id="services" class="section">
+    <div class="container">
+      <h2>What we help with</h2>
+      <p style="color: var(--color-text-muted); max-width: 40rem;">
+        Whatever your motor vehicle related needs are in Taiwan, we can help.
+        Browse our services below, or reach out for a free consultation.
+      </p>
+      <div class="service-grid" style="margin-top: 2rem;">
+        { serviceEntries.map(service => (
+          <article class="card">
+            <h3>{service.data.title}</h3>
+            <p>{service.data.description}</p>
+            <div class="card__footer">
+              {service.data.price
+                ? <span class="card__price">NT${service.data.price}</span>
+                : <span class="card__price">Free</span>}
+              <a href={'/services/' + service.id} class="card__link">Read more &rarr;</a>
+            </div>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
   <Footer />
 </Layout>
-
-<style>
- .hover-grow:hover {
-     z-index: 100;
- }
-</style>

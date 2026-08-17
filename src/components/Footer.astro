@@ -1,35 +1,32 @@
 ---
+import { getEntry, render } from 'astro:content';
 
-import { getEntry } from 'astro:content';
 const contactInfo = await getEntry('about', 'contact');
+const { Content } = contactInfo ? await render(contactInfo) : { Content: null };
 ---
 
-<footer class="footer text-white">
-  <div class="content footer__title">
-    {contactInfo.body}
-  </div>
-  <div class="content">
-    <div class="divider"></div>
-    <div class="row">
-      <div class="col-12">
-        <ul class="no-bullets">
-          <a href={contactInfo.data.facebook}>
-            <li class="footer__list-item">
-              Facebook
-            </li>
-          </a>
-          <a href="/about/aboutus">
-            <li class="footer__list-item">
-              About Us
-            </li>
-          </a>
-          <a href="/about/site">
-            <li class="footer__list-item">
-              About Site
-            </li>
-          </a>
-        </ul>
-      </div>
+<footer class="site-footer">
+  <div class="container site-footer__inner">
+    <div>
+      <h2>Get in touch</h2>
+      {Content && (
+        <div class="prose">
+          <Content />
+        </div>
+      )}
     </div>
+    <div>
+      <h2>Explore</h2>
+      <ul class="site-footer__links">
+        {contactInfo?.data.facebook && (
+          <li><a href={contactInfo.data.facebook}>Facebook</a></li>
+        )}
+        <li><a href="/about/aboutus">About Us</a></li>
+        <li><a href="/about/site">About This Site</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container site-footer__bottom">
+    &copy; 508.dev {new Date().getFullYear()}. English-language motor vehicle services in Taiwan.
   </div>
 </footer>

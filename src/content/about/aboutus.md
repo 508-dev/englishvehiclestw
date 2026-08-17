@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/About.astro
 title: About Us
 description: About the people offering English / Mandarin motor vehicle services in Taiwan
 ---
