@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/Service.astro
 title: Selling Assistance
 description: English-language assistance with listing vehicles for sale, negotiating with Chinese speakers, and filing DMV paperwork.
 price: '2000'

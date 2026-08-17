@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/Service.astro
 title: Inspection Assistance
 description: Get fluent English, white-glove handling of your yearly vehicle government inspection requirements.
 price: '2000 + gov fees'

@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/Service.astro
 title: Renting
 description: Free English-language consultation on renting motorcycle, scooters, and Cars in Taiwan.
 price: '2000'

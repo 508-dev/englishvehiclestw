@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/Service.astro
 title: Car, Scooter, and Motorcycle Repairs
 description: English-fluent mechanic services for cars, scooters, and motorcycles in Taiwan.
 price: '2000'

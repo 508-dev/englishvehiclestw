@@ -1,6 +1,6 @@
 {
-    "name": "",
-    "short_name": "",
+    "name": "English Vehicles TW",
+    "short_name": "EV Taiwan",
     "icons": [
         {
             "src": "/android-chrome-192x192.png",
@@ -13,7 +13,7 @@
             "type": "image/png"
         }
     ],
-    "theme_color": "#ffffff",
-    "background_color": "#ffffff",
+    "theme_color": "#16232c",
+    "background_color": "#fbf8f3",
     "display": "standalone"
 }

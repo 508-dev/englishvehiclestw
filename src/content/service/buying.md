@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/Service.astro
 title: Purchasing Assistance
 description: English-language vehicle model consultation, vehicle sourcing, purchase filing, and inspection service.
 price: '2000'

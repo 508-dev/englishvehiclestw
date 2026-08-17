@@ -1,0 +1,21 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  price?: string;
+}
+
+const { title, description, price } = Astro.props;
+---
+
+<section class="hero page-hero">
+  <div class="container hero__inner">
+    <h1>{title}</h1>
+    <p class="lede">{description}</p>
+    {price && (
+      <div class="page-hero__price">
+        <span aria-hidden="true">💰</span> NT${price}
+      </div>
+    )}
+  </div>
+</section>
