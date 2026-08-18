@@ -35,9 +35,9 @@ const serviceEntries = await getCollection('service');
             <h3>{service.data.title}</h3>
             <p>{service.data.description}</p>
             <div class="card__footer">
-              {service.data.price
-                ? <span class="card__price">NT${service.data.price}</span>
-                : <span class="card__price">Free</span>}
+              <!-- {service.data.price -->
+              <!--   ? <span class="card__price">NT${service.data.price}</span> -->
+              <!--   : <span class="card__price">Free</span>} -->
               <a href={'/services/' + service.id} class="card__link">Read more &rarr;</a>
             </div>
           </article>
